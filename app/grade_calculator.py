@@ -58,7 +58,13 @@ class GradeCalculator:
         # calculating the percentage grade
         return GradeCalculator.calculate_course_percentage(optimistic_grades, weights)
 
-# new minimum average points for all yet ungraded assignments to still get an A in class  
+# new minimum average points for all yet ungraded assignments to still get an A in class
+    def minimum_average_points_ungraded_for_a(grades:Grades, weights:GradeWeights) -> float:
+        """
+        Calculate the minimum average for all yet ungraded assignments
+        to still get an A in class.
+        """
+        return 0.0  
  
     @staticmethod
     def calculate_letter_grade(percentage_grade:float) -> str:
